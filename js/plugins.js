@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 /*========== CLIENTS CAROUSEL ==========*/
 $(document).ready(function(){ //when document(DOM) loads completely
-   $('#clients-carousel').owlCarousel({ //owlCarousel settings
+   $('#review-carousel').owlCarousel({ //owlCarousel settings
        autoplay: true, //set to false to turn off autoplay and only use nav
        autoplayHoverPause: true, //set to false to prevent pausing on hover
        loop: true, //set to false to stop carousel after all slides shown
@@ -72,17 +72,18 @@ $(document).ready(function(){ //when document(DOM) loads completely
            }
        }
    });
- });
-
-
-
-
-
-
-
-
-
-
+});
+ 
+/*========== TOP SCROLL BUTTON ==========*/
+$(document).ready(function () {
+   $(window).scroll(function () {
+       if ($(this).scrollTop() > 500) {
+           $('.top-scroll').fadeIn();
+       } else {
+           $('.top-scroll').fadeOut();
+       }
+   });
+});
 
 /*========== WAYPOINTS ANIMATION DELAY ==========*/
 //Original Resource: https://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css
