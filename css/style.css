@@ -136,3 +136,225 @@ button, a, a.btn,
    padding: .8rem 1.5rem;
    font-size: 1.1rem;
 }
+
+/*-- Bouncing Down Arrow --*/
+.arrow {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   animation: bounce 2s infinite;
+   -webkit-animation: bounce 2s infinite;
+}
+.down-arrow .fa-angle-down {
+   color: white;
+   font-size: 2.2rem;
+   opacity: .3;
+}
+.down-arrow .svg-inline--fa:hover {
+   opacity: .8;
+}
+
+/*============= FEATURES SECTION =============*/
+
+.btn-sm {
+   border-width: medium;
+   border-radius: 0;
+   padding: .5rem 1.1rem;
+   text-transform: uppercase;
+   font-size: .9rem;
+   margin: 1rem;
+}
+
+.btn-nubi {
+   background-color: #008080;
+   color: white;
+}
+
+.btn-nubi:hover {
+   background-color: #8d270e;
+   color: white;
+}
+
+h3.heading {
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 1.9rem;
+   text-align: center;
+   margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+   width: 3rem;
+   height: .25rem;
+   background-color: #008080;
+   margin: 0 auto 2rem;
+}
+
+.feature span {
+   color: #008080;
+   margin-bottom: .6rem;
+}
+
+.feature h3 {
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   padding-bottom: .3rem;
+}
+
+/*============= Gallery SECTION =============*/
+
+.gallery-item img:hover {
+   transform: scale(1.3);
+   cursor: zoom-in;
+
+}
+
+.gallery-item img {
+   transition: transform .4s ease;
+   width: 250px;
+   height: 250px;
+}
+
+/*============= PRICING SECTION =============*/
+
+.pricing-column {
+   background-color: white;
+   height: 100%;
+   padding: 1.6rem;
+   border-top: .25rem solid #008080;
+   box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+   transition: transform .7s ease;
+   position: relative;
+   overflow: hidden;
+}
+.pricing-column:hover {
+   transform: scale(1.1);
+}
+.pricing-column h4 {
+   font-size: 1.1rem;
+   font-weight: 700;
+}
+.ribbon {
+   background-color: #6c757d;
+   color: white;
+   font-size: .8rem;
+   font-weight: 700;
+   height: 2rem;
+   width: 10rem;
+   padding-top: .4rem;
+   position: absolute;
+   transform: rotate(45deg);
+   right: -2.8rem;
+   top: 1.5rem;
+   box-shadow: 0 0 .2rem rgba(0, 0, 0, .25);
+}
+
+/*============= REVIEWS SECTION =============*/
+
+.owl-stage {
+   display: flex;
+}
+.card {
+   height: 100%;
+   border-radius: 0;
+   text-align: center;
+   margin: 0 1rem;
+   border: .1rem solid rgba(0, 0, 0, .075);
+   box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+   transition: transform .4s ease;
+}
+.card:hover {
+   transform: scale(.95);
+}
+button.owl-dot.active span,
+button.owl-dot:hover span {
+   background: #008080!important;
+}
+ul.social {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   font-size: 1.5rem;
+}
+ul.social li {
+   display: inline;
+   padding-right: .8rem;
+}
+ul.social li a {
+   color: #008080;
+   transition: all .2s ease;
+}
+ul.social li a:hover {
+   color: #008080;
+}
+
+#review-carousel {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.review img {
+   border-radius: 50%;
+   transition: transform .3s ease;
+}
+.review img:hover {
+   transform: scale(.95);
+}
+blockquote .svg-inline--fa {
+   margin: 1rem;
+   color: #1EBBA3;
+}
+.review-hr {
+   border-top: .1rem solid #1EBBA3;
+}
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+   background: url('../img/footer/footer.jpg') no-repeat;
+   background-size: cover;
+   color: white;
+   /* background-color: #505962; */
+}
+.row.outer {
+   background-color: rgba(57, 63, 70, .85);
+   padding: 1rem 2rem 3rem;
+}
+.footer img {
+   height: 2rem;
+   margin: 1.5rem 0;
+}
+.footer a,
+.footer ul.social li a {
+   color: white;
+}
+.footer ul.social li a:hover {
+   color: #1EBBA3;
+}
+.footer h3 {
+   text-transform: uppercase;
+   margin: 1.5rem 0;
+}
+
+/*--- Contact Form --*/
+.form-group {
+   margin-bottom: 1.3rem;
+}
+.form-control {
+   background-color: #53595f;
+   border-radius: 0;
+   border: .15rem solid #666b71;
+   color: white!important;
+   font-size: 1.1rem;
+}
+.form-control:focus {
+   background-color: #53595f;
+   border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+   color: #b2b5b8!important;
+}
+hr.socket {
+   border-top: .2rem solid #666b71;
+   width: 100%;
+}

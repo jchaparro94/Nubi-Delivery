@@ -1,20 +1,78 @@
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
+$(document).ready(function () {
+   checkScroll();
+   $(window).scroll(checkScroll);
+});
+
+function checkScroll() { 
+   if ($(window).scrollTop() >= 300) { 
+       $('.navbar').addClass('solid'); 
+   } else {
+       $('.navbar').removeClass('solid');
+   }
+}
 
 
-/*========== TOGGLED NAVBAR - SOLID CLASS ==========*/
+/*========== ADD SOLID CLASS TO NAVBAR WHEN TOGGLED ==========*/
+$('.navbar-toggler').click(function () {
+   if ($(window).scrollTop() <= 300) {
+       $("nav.navbar").toggleClass("solid-toggle");
+   }
+});
 
 
 /*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
+$(document).on('click', 'a[href^="#"]', function (event) {
+   event.preventDefault();
+   $('.navbar-toggler').addClass('collapsed');
+   $('#navbarResponsive').removeClass('show');
 
+
+   setTimeout(function () {
+       $('nav.navbar').removeClass('solid-toggle');
+   }, 300);
+
+   $('html, body').animate({
+       scrollTop: $($.attr(this, 'href')).offset().top
+   }, 1000);
+});
 
 /*========== BOUNCING DOWN ARROW ==========*/
+$(document).ready(function () {
+   $(window).scroll(function () {
+       $('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
+   });
+});
 
 
 /*========== LIGHTBOX FOOD GALLERY ==========*/
-
+$(document).ready(function () {
+   lightbox.option({
+       'resizeDuration': 600,
+       'wrapAround': true,
+       'imageFadeDuration': 500
+   });
+});
 
 /*========== CLIENTS CAROUSEL ==========*/
-
+$(document).ready(function(){ //when document(DOM) loads completely
+   $('#clients-carousel').owlCarousel({ //owlCarousel settings
+       autoplay: true, //set to false to turn off autoplay and only use nav
+       autoplayHoverPause: true, //set to false to prevent pausing on hover
+       loop: true, //set to false to stop carousel after all slides shown
+       autoplayTimeout: 8000, //time between transitions
+       smartSpeed: 1600, //transition speed
+       dotsSpeed: 1000, //transition speed when using dots/buttons
+       responsive : { //set number of items shown per screen width
+           0 : {
+               items: 1 //0px width and up display 1 item
+           },
+           768 : {
+               items: 2 //768px width and up display 2 items
+           }
+       }
+   });
+ });
 
 
 
