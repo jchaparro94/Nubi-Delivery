@@ -15,7 +15,6 @@
 * FontAwesome
 * Bootstrap JS
 * jQuery
-* LightBox
 * Owl Carousel
 * Waypoints
 * PHP Mailer

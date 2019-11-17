@@ -150,7 +150,7 @@ button, a, a.btn,
    font-size: 2.2rem;
    opacity: .3;
 }
-.down-arrow .svg-inline--fa:hover {
+.down-arrow .fa-angle-down:hover {
    opacity: .8;
 }
 
